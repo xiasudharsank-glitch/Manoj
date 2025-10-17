@@ -38,7 +38,7 @@ export function Hero() {
           <div className="relative h-48 w-48 overflow-hidden rounded-full ring-4 ring-primary md:h-64 md:w-64">
             {/* Using a standard img to avoid Next image config issues in Next.js */}
             <img
-              src="/images/manoj-profile.jpg"
+              src="/images/Manoj professional picture.jpg"
               alt="Profile photo of Manoj Kumar S"
               className="h-full w-full object-cover"
               cross-origin="anonymous"
