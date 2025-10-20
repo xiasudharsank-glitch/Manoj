@@ -15,19 +15,19 @@ export function Hero() {
     >
       <div className="mx-auto grid max-w-6xl grid-cols-1 items-center gap-8 px-4 py-16 md:grid-cols-[1.1fr_.9fr] md:py-24">
         <div className="order-2 md:order-1">
-          <h1 id="hero-title" className="text-pretty text-3xl font-bold leading-tight text-foreground md:text-5xl">
+          <h1 id="hero-title" className="text-pretty text-3xl font-bold leading-tight text-foreground md:text-5xl animate-in fade-in slide-in-from-bottom-4 duration-700">
             MBA | Finance & Business Analytics | Aspiring Data & Business Analyst
           </h1>
-          <p className="mt-4 max-w-prose text-base leading-relaxed text-foreground/80 md:text-lg">
+          <p className="mt-4 max-w-prose text-base leading-relaxed text-foreground/80 md:text-lg animate-in fade-in slide-in-from-bottom-4 duration-700 delay-150">
             Transforming complex data into strategic business insights.
           </p>
-          <div className="mt-6 flex flex-wrap gap-3">
-            <Button asChild>
+          <div className="mt-6 flex flex-wrap gap-3 animate-in fade-in slide-in-from-bottom-4 duration-700 delay-300">
+            <Button asChild className="transition-transform duration-200 hover:scale-105">
               <a href="#projects" aria-label="View my projects">
                 View My Projects
               </a>
             </Button>
-            <Button asChild variant="secondary" className="border border-border">
+            <Button asChild variant="secondary" className="border border-border transition-all duration-200 hover:scale-105 hover:border-primary">
               <a href="#contact" aria-label="Contact me">
                 Contact Me
               </a>
@@ -35,12 +35,11 @@ export function Hero() {
           </div>
         </div>
         <div className="order-1 flex justify-center md:order-2">
-          <div className="relative h-48 w-48 overflow-hidden rounded-full ring-4 ring-primary md:h-64 md:w-64">
-            {/* Using a standard img to avoid Next image config issues in Next.js */}
+          <div className="relative h-48 w-48 overflow-hidden rounded-full ring-4 ring-primary md:h-64 md:w-64 transition-all duration-300 hover:ring-8 hover:scale-105 animate-in fade-in zoom-in-50 duration-700">
             <img
               src="/images/Manoj profile picture.jpg"
               alt="Profile photo of Manoj Kumar S"
-              className="h-full w-full object-cover"
+              className="h-full w-full object-cover transition-transform duration-300 hover:scale-110"
               cross-origin="anonymous"
             />
           </div>

@@ -28,7 +28,7 @@ export function AboutSection() {
             </div>
 
             <div className="mt-6">
-              <Button asChild variant="outline">
+              <Button asChild variant="outline" className="transition-all duration-200 hover:scale-105 hover:border-primary">
                 <a href="#" aria-label="Download Resume (PDF)">
                   📄 Download Resume
                 </a>
@@ -36,18 +36,18 @@ export function AboutSection() {
             </div>
           </div>
 
-          <div className="grid content-start gap-4 rounded-lg border bg-secondary p-4">
-            <div className="flex items-center gap-3">
+          <div className="grid content-start gap-4 rounded-lg border bg-secondary p-4 transition-all duration-300 hover:shadow-lg hover:border-primary hover:scale-[1.02]">
+            <div className="flex items-center gap-3 transition-all duration-200 hover:translate-x-1">
               <span aria-hidden>📍</span>
               <span className="text-foreground/90">Vijayapura, Bengaluru Rural – 562135</span>
             </div>
-            <div className="flex items-center gap-3">
+            <div className="flex items-center gap-3 transition-all duration-200 hover:translate-x-1">
               <span aria-hidden>📞</span>
               <a className="text-primary underline-offset-4 hover:underline" href="tel:+917259052573">
                 7259052573
               </a>
             </div>
-            <div className="flex items-center gap-3">
+            <div className="flex items-center gap-3 transition-all duration-200 hover:translate-x-1">
               <span aria-hidden>✉️</span>
               <a className="text-primary underline-offset-4 hover:underline" href="mailto:manumk25273@gmail.com">
                 manumk25273@gmail.com

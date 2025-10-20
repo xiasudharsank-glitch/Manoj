@@ -10,18 +10,20 @@ export function ProjectsSection() {
         </h2>
 
         <div className="mt-8 grid gap-6 md:grid-cols-2">
-          <Card className="transition hover:shadow-md">
+          <Card className="transition-all duration-300 hover:shadow-lg hover:scale-[1.02] hover:border-primary group">
             <CardHeader>
-              <CardTitle className="text-pretty">GST Management Study (Major Project)</CardTitle>
+              <CardTitle className="text-pretty transition-colors duration-200 group-hover:text-primary">
+                GST Management Study (Major Project)
+              </CardTitle>
             </CardHeader>
             <CardContent className="space-y-3">
               <p className="text-foreground/80">
                 Studied GST management, planning, and process at AARMS Value Chain Pvt. Ltd.
               </p>
               <div className="flex flex-wrap gap-2">
-                <Badge variant="secondary">MS Word</Badge>
-                <Badge variant="secondary">Charts</Badge>
-                <Badge variant="secondary">Internet Browsers</Badge>
+                <Badge variant="secondary" className="transition-all duration-200 hover:scale-110">MS Word</Badge>
+                <Badge variant="secondary" className="transition-all duration-200 hover:scale-110">Charts</Badge>
+                <Badge variant="secondary" className="transition-all duration-200 hover:scale-110">Internet Browsers</Badge>
               </div>
               <p className="text-sm text-foreground/70">
                 Outcome: Gained practical knowledge of GST registration, invoicing, compliance, and reporting.
@@ -29,9 +31,11 @@ export function ProjectsSection() {
             </CardContent>
           </Card>
 
-          <Card className="transition hover:shadow-md">
+          <Card className="transition-all duration-300 hover:shadow-lg hover:scale-[1.02] hover:border-primary group">
             <CardHeader>
-              <CardTitle className="text-pretty">Customer Behavior Analysis (Mini Project)</CardTitle>
+              <CardTitle className="text-pretty transition-colors duration-200 group-hover:text-primary">
+                Customer Behavior Analysis (Mini Project)
+              </CardTitle>
             </CardHeader>
             <CardContent className="space-y-3">
               <p className="text-foreground/80">
@@ -39,8 +43,8 @@ export function ProjectsSection() {
                 quality, trust, and delivery factors.
               </p>
               <div className="flex flex-wrap gap-2">
-                <Badge variant="secondary">MS Word</Badge>
-                <Badge variant="secondary">Browsers</Badge>
+                <Badge variant="secondary" className="transition-all duration-200 hover:scale-110">MS Word</Badge>
+                <Badge variant="secondary" className="transition-all duration-200 hover:scale-110">Browsers</Badge>
               </div>
               <p className="text-sm text-foreground/70">
                 Outcome: Understood consumer priorities like pricing, reviews, and delivery time.

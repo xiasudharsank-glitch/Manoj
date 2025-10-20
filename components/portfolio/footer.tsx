@@ -20,30 +20,30 @@ export function SiteFooter() {
 
         {/* Social Links (using Lucide icons as an example) */}
         <div className="flex justify-center space-x-6 mt-2 md:mt-0">
-          
-          <Link 
-            href="YOUR_LINKEDIN_URL" 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            className="hover:text-primary transition-colors"
+
+          <Link
+            href="https://www.linkedin.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="transition-all duration-200 hover:text-primary hover:scale-125"
             aria-label="LinkedIn Profile"
           >
             <Linkedin className="h-5 w-5" />
           </Link>
-          
-          <Link 
-            href="YOUR_GITHUB_URL" 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            className="hover:text-primary transition-colors"
+
+          <Link
+            href="https://github.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="transition-all duration-200 hover:text-primary hover:scale-125"
             aria-label="GitHub Profile"
           >
             <Github className="h-5 w-5" />
           </Link>
 
-          <Link 
-            href="mailto:YOUR_EMAIL_ADDRESS" 
-            className="hover:text-primary transition-colors"
+          <Link
+            href="mailto:manumk25273@gmail.com"
+            className="transition-all duration-200 hover:text-primary hover:scale-125"
             aria-label="Email Address"
           >
             <Mail className="h-5 w-5" />

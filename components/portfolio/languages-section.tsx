@@ -8,10 +8,10 @@ export function LanguagesSection() {
           Languages
         </h2>
         <div className="mt-6 flex flex-wrap gap-3">
-          <Badge className="rounded-full">English</Badge>
-          <Badge className="rounded-full">Kannada</Badge>
-          <Badge className="rounded-full">Telugu</Badge>
-          <Badge className="rounded-full">Hindi</Badge>
+          <Badge className="rounded-full transition-all duration-200 hover:scale-110 hover:shadow-md">English</Badge>
+          <Badge className="rounded-full transition-all duration-200 hover:scale-110 hover:shadow-md">Kannada</Badge>
+          <Badge className="rounded-full transition-all duration-200 hover:scale-110 hover:shadow-md">Telugu</Badge>
+          <Badge className="rounded-full transition-all duration-200 hover:scale-110 hover:shadow-md">Hindi</Badge>
         </div>
       </div>
     </section>
