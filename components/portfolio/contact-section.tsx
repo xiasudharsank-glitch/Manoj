@@ -117,4 +117,13 @@ export function ContactSection() {
             </div>
             <div>
               ✉️{" "}
-              <a classNam
+              <a className="text-primary underline-offset-4 hover:underline" href="mailto:manumk25273@gmail.com">
+                manumk25273@gmail.com
+              </a>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  )
+}
