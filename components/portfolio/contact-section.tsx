@@ -3,8 +3,9 @@ import React, { useState, useCallback } from "react"
 import { Send, Linkedin, Mail, Loader2, CheckCircle, XCircle } from "lucide-react"
 
 // --- Component Mocks for Standalone Execution ---
-// Mocks are required to make the component runnable, as the original imports
-// from "@/components/ui/..." are unavailable. They are kept simple to maintain original layout.
+// NOTE: These mock components are included to make the code runnable in the preview.
+// In a real project using a UI library like Shadcn, you would delete these mocks
+// and uncomment the imports for your actual Button, Input, and Textarea components.
 const Button = ({ children, className = "", variant = "default", asChild, ...props }) => {
   let baseClasses = "inline-flex items-center justify-center rounded-lg text-sm font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed px-4 py-2"
   
