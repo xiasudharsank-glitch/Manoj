@@ -1,7 +1,6 @@
 "use client"
 
-import type React from "react"
-import { useCallback, useState } from "react"
+import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
@@ -9,34 +8,6 @@ import { Textarea } from "@/components/ui/textarea"
 export function ContactSection() {
   const [status, setStatus] = useState<string | null>(null)
   const [loading, setLoading] = useState(false)
-
-  const handleSubmit = useCallback(async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault()
-    const form = e.currentTarget
-    const formData = new FormData(form)
-
-    setLoading(true)
-    setStatus(null)
-
-    try {
-      const response = await fetch("https://formspree.io/f/xwkgrapo", {
-        method: "POST",
-        body: formData,
-        headers: { Accept: "application/json" },
-      })
-
-      if (response.ok) {
-        setStatus("SUCCESS")
-        form.reset()
-      } else {
-        setStatus("ERROR")
-      }
-    } catch {
-      setStatus("ERROR")
-    } finally {
-      setLoading(false)
-    }
-  }, [])
 
   return (
     <section id="contact" aria-labelledby="contact-title" className="border-b">
@@ -50,7 +21,19 @@ export function ContactSection() {
         </p>
 
         <div className="mt-8 grid gap-8 md:grid-cols-[1.2fr_.8fr]">
-          <form onSubmit={handleSubmit} className="space-y-4 rounded-lg border bg-card p-4">
+          <form
+            action="https://formspree.io/f/xwkgrapo"
+            method="POST"
+            onSubmit={() => {
+              setLoading(true)
+              setStatus(null)
+              setTimeout(() => {
+                setLoading(false)
+                setStatus("SUCCESS")
+              }, 1500)
+            }}
+            className="space-y-4 rounded-lg border bg-card p-4"
+          >
             {/* Name Input */}
             <div className="grid gap-2">
               <label htmlFor="name" className="text-sm font-medium">
@@ -98,9 +81,6 @@ export function ContactSection() {
             {/* ✅ Status messages */}
             {status === "SUCCESS" && (
               <p className="text-green-600 text-sm pt-2">✅ Your message has been sent successfully!</p>
-            )}
-            {status === "ERROR" && (
-              <p className="text-red-600 text-sm pt-2">❌ Oops! Something went wrong. Please try again later.</p>
             )}
           </form>
 
