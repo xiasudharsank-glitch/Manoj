@@ -22,7 +22,7 @@ export function SiteFooter() {
         <div className="flex justify-center space-x-6 mt-2 md:mt-0">
 
           <Link
-            href="https://www.linkedin.com/"
+            href="https://www.linkedin.com/in/manu-manu-79a503305?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
             target="_blank"
             rel="noopener noreferrer"
             className="transition-all duration-200 hover:text-primary hover:scale-125"
@@ -30,17 +30,6 @@ export function SiteFooter() {
           >
             <Linkedin className="h-5 w-5" />
           </Link>
-
-          <Link
-            href="https://github.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="transition-all duration-200 hover:text-primary hover:scale-125"
-            aria-label="GitHub Profile"
-          >
-            <Github className="h-5 w-5" />
-          </Link>
-
           <Link
             href="mailto:manumk25273@gmail.com"
             className="transition-all duration-200 hover:text-primary hover:scale-125"

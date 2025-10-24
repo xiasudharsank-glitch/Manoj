@@ -106,7 +106,7 @@ export function ContactSection() {
                 variant="secondary"
                 className="border transition-all duration-200 hover:scale-105 hover:border-primary hover:text-primary"
               >
-                <a href="https://www.linkedin.com/" aria-label="Open LinkedIn" rel="noreferrer" target="_blank">
+                <a href="https://www.linkedin.com/in/manu-manu-79a503305?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" aria-label="Open LinkedIn" rel="noreferrer" target="_blank">
                   LinkedIn
                 </a>
               </Button>
