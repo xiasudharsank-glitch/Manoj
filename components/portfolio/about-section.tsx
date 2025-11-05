@@ -29,7 +29,7 @@ export function AboutSection() {
 
             <div className="mt-6">
               <Button asChild variant="outline" className="transition-all duration-200 hover:scale-105 hover:border-primary">
-                <a href="#" aria-label="Download Resume (PDF)">
+                <a href="Manoj_resume.pdf" aria-label="Download Resume (PDF)">
                   📄 Download Resume
                 </a>
               </Button>
